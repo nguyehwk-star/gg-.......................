@@ -18,7 +18,7 @@ from discord import TextStyle
 
 
 # Load environment variables
-DRAY = "MTQzODc5MzA1NTk5MjkzODU3Nw.G-jLaD.1ObKYPrEg3lwzcf_Xfpc52HOXpT5hiK8gfWHfA"
+DISCORD_TOKEN = "MTQzODc5MzA1NTk5MjkzODU3Nw.G-jLaD.1ObKYPrEg3lwzcf_Xfpc52HOXpT5hiK8gfWHfA"
 MAIN_ADMIN_ID = int(os.getenv('MAIN_ADMIN_ID', '1406851707962392626'))
 VPS_USER_ROLE_ID = int(os.getenv('VPS_USER_ROLE_ID', '1434034970975797298'))
 DEFAULT_STORAGE_POOL = os.getenv('DEFAULT_STORAGE_POOL', 'default')
@@ -28,7 +28,7 @@ CHECK_INTERVAL = int(os.getenv('CHECK_INTERVAL', '600'))
 
 # === PORT FORWARDING CONFIG ===
 # Lấy địa chỉ IP public của máy chủ.
-HOST_IP = '100.99.135.23'
+HOST_IP = os.getenv('HOST_IP')
 PORT_RANGE_START = 20000 # <--- Dải port ngẫu nhiên
 PORT_RANGE_END = 60000   # <--- Dải port ngẫu nhiên
 # ==============================
@@ -3525,7 +3525,7 @@ async def stats_alias(interaction: discord.Interaction):
 
 # Run the bot with your token
 if __name__ == "__main__":
-    if DRAY:
-        bot.run(DRAY)
+    if DISCORD_TOKEN:
+        bot.run(DISCORD_TOKEN)
     else:
         logger.error("No Discord token found in DISCORD_TOKEN environment variable.")
