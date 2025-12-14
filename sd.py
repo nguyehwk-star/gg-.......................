@@ -15,7 +15,7 @@ import time
 import random # <--- THÊM VÀO
 from discord.ui import Modal, TextInput
 from discord import TextStyle
-
+# Load environment variables
 
 # Load environment variables
 DISCORD_TOKEN = "MTQzODc5MzA1NTk5MjkzODU3Nw.GwMbzR.e1uy9kT2dM47fXlZ8p1ba_2hCTsCIJNWZzqMJI"
