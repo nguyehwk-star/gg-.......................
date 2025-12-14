@@ -3525,7 +3525,7 @@ async def stats_alias(interaction: discord.Interaction):
 
 # Run the bot with your token
 if __name__ == "__main__":
-    if DISCORD_TOKEN:
+    if DRAY:
         bot.run(DRAY)
     else:
         logger.error("No Discord token found in DISCORD_TOKEN environment variable.")
