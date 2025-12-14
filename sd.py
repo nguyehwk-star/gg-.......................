@@ -18,7 +18,7 @@ from discord import TextStyle
 
 
 # Load environment variables
-DISCORD_TOKEN = "MTQzODc5MzA1NTk5MjkzODU3Nw.G-jLaD.1ObKYPrEg3lwzcf_Xfpc52HOXpT5hiK8gfWHfA"
+DISCORD_TOKEN = "MTQzODc5MzA1NTk5MjkzODU3Nw.GwMbzR.e1uy9kT2dM47fXlZ8p1ba_2hCTsCIJNWZzqMJI"
 MAIN_ADMIN_ID = int(os.getenv('MAIN_ADMIN_ID', '1406851707962392626'))
 VPS_USER_ROLE_ID = int(os.getenv('VPS_USER_ROLE_ID', '1434034970975797298'))
 DEFAULT_STORAGE_POOL = os.getenv('DEFAULT_STORAGE_POOL', 'default')
